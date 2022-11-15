@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">   
+
+    <!-- Stylesheet reference -->
+    <link href="style.css" rel="stylesheet">
+    <title>Project 2</title> 
+
+    <!-- Animate.css reference --> 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    </head>
+
+    <body> 
+    <!-- Navbar -->
+    <section class = "sticky-top">
+    <!-- COMPLETE NAVBAR DOC: https://getbootstrap.com/docs/5.2/components/navbar/#how-it-works -->
+
+    <!-- Makes a navbar (at lg sizes and above)   -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark py-3"> 
+
+    <!-- Keeping the navbar in a container helps with padding -->
+    <div class="container"> 
+        <h2> 
+        <a href="#" class="navbar-brand">Ice Cream Comet</a> 
+        </h2>
+        
+        
+
+        <!-- Hamburger button for navbar. Targets the id = #navmenu -->
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Allows navbar to collapse (disappear) -->
+        <div class="collapse navbar-collapse" id="navmenu">
+        
+        <!-- Actual navbar text -->
+        <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item">
+            <a href="#Products" class="nav-link">Products</a>
+            </li> 
+
+            <li class="nav-item">
+            <a href="#Checkout" class="nav-link">Check Out</a>
+            </li> 
+
+            <li class="nav-item">
+            <a href="#Cart" class="nav-link">(Cart Icon)</a>
+            </li>
+        
+        </ul>
+        
+        </div>
+    </div>
+
+    </nav>
+    </section>  
+
+    <!-- TAGLINE -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start" id="AboutUs"> 
+    <div class="container"> 
+        <!-- First row in system -->
+        <div class="d-sm-flex align-items-center justify-content-between animate__animated animate__slideInLeft">
+        <div>
+            <h1> The environment is 
+            <span class="text-success">IMPORTANT</span> 
+            <br><br>
+            Our app can <span class="text-success">HELP</span>
+            </h1>   
+            
+            <!-- lead paragraphs stand out more -->
+            <p class="lead my-4"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Numquam eligendi dignissimos tempore sed consectetur, cum a iusto beatae praesentium. 
+            </p>  
+            
+            <a href="#Downloads" class="btn nav-link text-white btn-primary btn-lg p-3 w-50">
+                Shop Now!
+            </a>
+            
+        </div>
+            <img class="img-fluid d-none d-sm-block" src="images/undraw_environment_iaus.svg" alt = "A hand holding a plant">
+        </div>
+    </div>
+    </section> 
+    </body>
+</html>
