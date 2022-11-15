@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box; 
+    padding: 0px; 
+    font-family: 'Hammersmith One', sans-serif;
+    /* font-weight: Regular, 400; */
+  }
+
+
+.bg.pink {
+    background-color: #FF76A5;
+}  
+
+.text.pink {
+    color:#FF76A5;
+}  
+
+.bg.blue {
+    background-color: #17A9FF;
+}   
+
+.bg.light_blue {
+    background-color: #AFE9F7;
+}
+
+
+
+a, h1 {
+
+    font-family: 'Paytone One', sans-serif;
+} 
+
+.tagline {
+    font-size: x-large;
+} 
+
+
+.fly-in-left { 
+    animation-duration: .1s;
+    animation: backInLeft;
+} 
+
+.fly-in-right { 
+    animation-duration: .1s;
+    animation: backInRight;
+}
