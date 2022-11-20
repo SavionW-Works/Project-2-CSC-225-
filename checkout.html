@@ -84,36 +84,37 @@
             
             <form class="row g-3 needs-validation" method="get">
                 
+            
               <!-- First Name -->
                 <div class="col-md-4">
                   <label for="firstName" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="firstName" value="" required>
+                  <input type="text" class="form-control" id="firstName" name="firstName" value="" required>
                 </div>
                 
                 <!-- Last Name -->
                 <div class="col-md-4">
                   <label for="lastName" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="lastName" value="" required>
+                  <input type="text" class="form-control" id="lastName" name="lastName" value="" required>
                 </div>
 
                 <!-- Email -->
                 <div class="col-md-4">
                   <label for="emailInput" class="form-label">Email</label>
                   <div class="input-group">
-                    <input type="email" class="form-control" id="emailInput" required> 
+                    <input type="email" class="form-control" id="emailInput" name="emailInput" required> 
                   </div>
                 </div>
 
                 <!-- City -->
                 <div class="col-md-4">
                   <label for="cityInput" class="form-label">City</label>
-                  <input type="text" class="form-control" id="cityInput" required>
+                  <input type="text" class="form-control" id="cityInput" name="cityInput" required>
                 </div>
 
                 <!-- State -->
                 <div class="col-md-4">
                   <label for="stateInput" class="form-label">State</label>
-                  <select class="form-select" id="stateInput" required>
+                  <select class="form-select" id="stateInput" name="stateInput" required>
                     <option selected disabled value="">Choose...</option>
                     <option>New York</option> 
                     <option>Florida</option> 
@@ -125,13 +126,13 @@
                 
                 <div class="col-md-4">
                   <label for="zipInput" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="zipInput" required>
+                  <input type="text" class="form-control" id="zipInput" name="zipInput" required>
                 </div>  
 
 
                 <div class="col-md-4">
                     <label for="cardType" class="form-label">Card Type</label>
-                    <select class="form-select" id="cardType" required>
+                    <select class="form-select" id="cardType"  name="cardType" required>
                       <option selected disabled value="">Choose...</option>
                       <option>Credit</option> 
                       <option>Debit</option> 
@@ -141,7 +142,7 @@
 
                 <div class="col-md-4">
                     <label for="cardBrand" class="form-label">Card Brand</label>
-                    <select class="form-select" id="cardBrand" required>
+                    <select class="form-select" id="cardBrand" name="cardBrand" required>
                       <option selected disabled value="">Choose...</option>
                       <option>Visa</option> 
                       <option>Chase</option> 
@@ -154,7 +155,7 @@
 
                 <div class="col-md-4">
                     <label for="cardNumber" class="form-label">Card Number</label>
-                    <input type="text" class="form-control" id="cardNumber" required>
+                    <input type="text" class="form-control" id="cardNumber" name="cardNumber" required>
                 </div>
 
 
@@ -162,20 +163,20 @@
                 <div class="container"> 
                     <h3 class = "fs-1"> Delivery Type </h3> 
                     <div class="form-check"> 
-                        <label class="form-label" for="DeliveryType_Normal">Normal</label> 
-                        <input type="radio" class="form-check-input" id="DeliveryType_Normal" required>  
+                        <input type="radio" class="form-check-input" name="DeliveryType" id="DeliveryType_Normal" value="Normal" required>    
+                        <label class="form-label" for="DeliveryType_Normal">Normal</label>  
                     </div> 
     
-                    <div class = "form-check">   
-                        <label class="form-label" for="DeliveryType_Express"> Express (+$4.99)</label> 
-                        <input type="radio" class="form-check-input" id="DeliveryType_Express" required>
+                    <div class = "form-check">    
+                        <input type="radio" class="form-check-input" name="DeliveryType" id="DeliveryType_Express" value="Express" required>
+                        <label class="form-label" for="DeliveryType_Express"> Express (+$4.99)</label>
                     </div>
                 </div>
                 
                 <div class="col-12">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
+                    <input class="form-check-input" type="checkbox" value="yes" id="agreeTOS" name="agreeTOS" required>
+                    <label class="form-check-label" for="agreeTOS">
                       I agree to the Terms and Conditions
                     </label>
                   </div>
@@ -196,9 +197,9 @@
               </div> 
 
 
-               <div class="col-12 text-center">
+              <div class="col-12 text-center">
                   <button class="btn btn-primary fs-1" type="submit"> Submit </button> 
-                </div>
+              </div>
               </form>
         </div>
     </section>  
